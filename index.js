@@ -1,5 +1,4 @@
 // Load environment variables from a file
-// This assumes you're using a package like dotenv to load environment variables
 process.loadEnvFile();
 
 // Retrieve sensitive information from environment variables
@@ -32,10 +31,3 @@ mongoose
   .catch((err) => {
     console.log("Error connecting to MongoDB", err);
   });
-
-// Notes:
-// 1. Make sure to install required packages: express, mongoose, and dotenv (if used)
-// 2. Create a .env file in the root directory to store sensitive information like USER and PASSWORD
-// 3. The MongoDB connection string should be adjusted based on your specific cluster details
-// 4. Error handling could be improved for production use
-// 5. Consider adding more routes and middleware as needed for your application
